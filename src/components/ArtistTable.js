@@ -41,6 +41,7 @@ class ArtistTable extends React.Component {
       rows.push(
         <ArtistRow
           artist={e.artist}
+          key={e.artist.artist_id}
         />
       );
     });
