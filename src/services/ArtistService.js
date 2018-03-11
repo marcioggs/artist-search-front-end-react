@@ -1,10 +1,8 @@
 import axios from 'axios';
 
 class ArtistService {
-    constructor() {
-    }
-
     getListOfArtists(searchText) {
+        //TODO: Change to developed back-end.
         var instance = axios.create({
             baseURL: 'http://localhost:3000',
             params: {
@@ -14,7 +12,6 @@ class ArtistService {
 
         return instance.get('/ws/1.1/artist.search?q_artist=' + searchText);
     }
-
 }
 
 export default ArtistService;

@@ -11,7 +11,11 @@ class ArtistTable extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     this.searchText = nextProps.searchText;
-    this.searchArtist();   
+    if (!this.searchText) {
+      this.artists = [];
+    } else {
+      this.searchArtist();   
+    }
   }
 
   searchArtist() {
@@ -42,7 +46,7 @@ class ArtistTable extends React.Component {
     });
 
     return (
-      <table>
+      <table class='container table-striped text-center'>
         <thead>
           <tr>
             <th>Name</th>

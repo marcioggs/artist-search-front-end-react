@@ -20,10 +20,11 @@ class SearchableArtistTable extends React.Component {
   
     render() {
       return (
-        <div>
+        <div class='container'>
           <SearchBar
             onSearchTextChange={this.handleSearchTextChange}
           />
+          <br/>
           <ArtistTable
             searchText={this.state.searchText}
           />
