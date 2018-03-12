@@ -1,12 +1,12 @@
 import axios from 'axios';
+import config from '../config.js';
 
 class ArtistService {
     getListOfArtists(searchText) {
-        //TODO: Change to developed back-end.
         var instance = axios.create({
             baseURL: 'http://localhost:3000',
             params: {
-                apikey: '2f43ecfbba9b62c8fb22198cef6d8cbd'
+                apikey: config.musixmatchApi.key
             }
           });
 
