@@ -3,7 +3,7 @@
 Find information about an artist.
 This application was developed to practice React.
   
-!\[\](github-assets/screen.png)
+![](github-assets/screen.png)
   
 What was used:
 
