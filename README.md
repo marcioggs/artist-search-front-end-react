@@ -10,6 +10,7 @@ What was used:
  - [React](https://reactjs.org/) to build the front-end;
  - [Musicmatch API](https://developer.musixmatch.com/) to retrieve information about the artists;
  - [axios](https://github.com/axios/axios) to facilitate Musicmatch information retrieving;
+ - [Bootstrap](https://getbootstrap.com) for the design; 
  - [Fontawesome](https://fontawesome.com/) for Twitter and stars icons;
  - [Flag Sprites](https://www.flag-sprites.com/) for the flags;
  - [Visual Studio Code](https://code.visualstudio.com/) to develop.
