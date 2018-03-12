@@ -42,7 +42,7 @@ class ArtistRow extends React.Component {
     const starsRating = this.getStarsRating(artist.artist_rating);
     
     return (
-      <tr>
+      <tr className="artist-row" data-href={artist.artist_share_url}>
         <td>{artist.artist_name}</td>
         <td><img src="blank.gif" className={countryFlagClass} alt={countryName} title={countryName}/></td>
         <td>{starsRating}</td>

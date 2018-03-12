@@ -47,7 +47,7 @@ class ArtistTable extends React.Component {
     });
 
     return (
-      <table className='container table-striped text-center'>
+      <table className='container table-striped table-hover text-center'>
         <thead>
           <tr>
             <th>Name</th>

@@ -5,3 +5,7 @@
 .fa-star {
     color: rgb(183, 160, 44);
 }
+
+.artist-row {
+    cursor: pointer;
+}
