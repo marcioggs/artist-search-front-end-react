@@ -23,18 +23,12 @@ class ArtistRow extends React.Component {
     }
 
     getStarsRating(hundredRating) {
-      const fiveRating = Math.round(hundredRating/20);
-      let stars = [];
+      const zeroToFiveRating = Math.round(hundredRating/20);
+      const solidStar = <i className="fas fa-star"></i>;
+      const blankStar = <i className="far fa-star"></i>;
 
-      for (let i = 1; i <= 5; i++) {
-        if (fiveRating >= i) {
-          //stars += 'x';
-          stars.push(<i className="fas fa-star"></i>);
-        } else {
-          //stars += 'o'
-          stars.push(<i className="far fa-star"></i>);
-        }
-      }
+      let stars = Array(zeroToFiveRating).fill(solidStar);
+      stars = stars.concat(Array(5 - zeroToFiveRating).fill(blankStar));
 
       return stars;
     }
