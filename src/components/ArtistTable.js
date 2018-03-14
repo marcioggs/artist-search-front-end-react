@@ -37,7 +37,7 @@ class ArtistTable extends React.Component {
   render() {
     const rows = [];
     
-      this.artists.forEach((e) => {
+    this.artists.forEach((e) => {
       rows.push(
         <ArtistRow
           artist={e.artist}
