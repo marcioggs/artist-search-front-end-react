@@ -1,5 +1,6 @@
 import React from 'react';
 import CountryCode from 'iso-3166-1-alpha-2';
+import './ArtistRow.css';
 
 class ArtistRow extends React.Component {
 
