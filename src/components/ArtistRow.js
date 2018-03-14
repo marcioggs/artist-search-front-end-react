@@ -1,8 +1,13 @@
 import React from 'react';
 import CountryCode from 'iso-3166-1-alpha-2';
+import PropTypes from 'prop-types';
 import '../styles/ArtistRow.css';
 
 class ArtistRow extends React.Component {
+
+  static propTypes = {
+    artist: PropTypes.object.isRequired
+  };
 
   getCountryFlagClass(country) {
     let clazz = null;

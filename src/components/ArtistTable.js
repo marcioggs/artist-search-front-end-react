@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ArtistRow from './ArtistRow.js';
 import ArtistService from '../services/ArtistService.js';
 
@@ -8,6 +9,10 @@ class ArtistTable extends React.Component {
     this.searchText = props.searchText;
     this.artists = [];
   }
+
+  static propTypes = {
+    searchText: PropTypes.string
+  };
 
   componentWillReceiveProps(nextProps) {
     this.searchText = nextProps.searchText;
