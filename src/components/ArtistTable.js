@@ -62,4 +62,4 @@ class ArtistTable extends React.Component {
   }
 }
 
-  export default ArtistTable;
+export default ArtistTable;
