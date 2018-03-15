@@ -24,6 +24,7 @@ class SearchBar extends React.Component {
           value={this.props.searchText}
           onChange={this.handleSearchTextChange}
         />
+        <span id='loading'></span> 
       </form>
     );
   }
